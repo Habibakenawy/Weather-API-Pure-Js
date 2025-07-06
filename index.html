@@ -1,15 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container mt-5 mb-5">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo@2x.png" alt="" width="80" class="me-2" />
+
+          <div class="d-flex flex-column">
+            <span>Weather</span>
+            <small class="text-muted">tagline goes here</small>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active ms-4 me-4" aria-current="page" href="#"
+                ><button type="button" class="nav-button">Home</button></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4 me-4" aria-current="page" href="#"
+                ><button type="button" class="nav-buttons">News</button></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4 me-4" aria-current="page" href="#"
+                ><button type="button" class="nav-buttons">
+                  Live cameras
+                </button></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4 me-4" aria-current="page" href="#"
+                ><button type="button" class="nav-buttons">Photos</button></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-4 me-4" aria-current="page" href="#"
+                ><button type="button" class="nav-buttons">Contact</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="search">
+      <div class="main">
+        <div class="container">
+          <form action="" class="mt-5 position-relative">
+            <input
+              type="search"
+              class="form-control p-2 rounded-5"
+              placeholder="Find your location..."
+              aria-label="Recipient’s username"
+              id="search"
+            />
+
+            <button
+              class="btn btn-primary position-absolute top-0 end-0 m-1 rounded-5"
+              type="button"
+              id="button-addon2"
+            >
+              Find
+            </button>
+          </form>
+              <div class="row row-cols-1 row-cols-lg-3 mt-5 cards">
+            <div class="col card text-bg-secondary">
+              <div class="card-header"></div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col card text-bg-dark">
+              <div class="card-header"></div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col card text-bg-secondary">
+              <div class="card-header"></div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <footer>
+  <div class="container">
+    <div class="content d-flex align-items-center">
+      <form action="" class="mt-5 position-relative me-auto w-75">
+        <input
+          type="email"
+          class="form-control p-2 rounded-5"
+          placeholder="Enter your email to subscribe..."
+          aria-label="Email"
+          id="contact"
+        />
+        <button
+          class="btn btn-primary position-absolute m-1 rounded-5"
+          type="button"
+          id="button-addon2"
+        >
+          Subscribe
+        </button>
+      </form>
+
+      <div class="emojis d-flex gap-3 mt-5">
+        <div class="emoji d-flex justify-content-center align-items-center">
+        <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="emoji d-flex justify-content-center align-items-center">
+        <i class="fab fa-twitter"></i>
+        </div>
+        <div class="emoji d-flex justify-content-center align-items-center">
+        <i class="fab fa-google-plus-g"></i>
+        </div>
+         <div class="emoji d-flex justify-content-center align-items-center">
+        <i class="fab fa-pinterest-p"></i>
+        </div>
+      </div>
+    </div>
+    <p  class="text-secondary mt-4 mb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </div>
+</footer>
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

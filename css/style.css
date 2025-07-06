@@ -1,0 +1,100 @@
+:root{
+    --main-font: "Roboto", sans-serif;
+}
+body{
+    font-family: var(--main-font);
+    font-weight: 800;
+}
+
+.nav-button{
+    background-color: transparent;
+    color: #009AD8;
+    border: 1px #009AD8 solid;
+    border-radius: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 20px;
+}
+.nav-buttons{
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    border:none;
+    font-size: 20px;
+    transition: color 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out; 
+     white-space: nowrap;
+    
+}
+
+
+.nav-buttons:hover{
+  color:#009AD8;
+   border: 1px #009AD8 solid;
+
+}
+
+.main {
+  height: 100vh;
+  background: 
+    linear-gradient(to bottom, transparent 50%, #1E202B 50%),
+    url("../assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100% 50%;
+  background-position: top, top;
+}
+
+
+
+.search .container{
+     display: flow-root; 
+     /* to solve margin collapse problem */
+}
+
+.search input,#contact{
+    background-color: #2B3035;
+    border-color:#2B3035 ;
+}
+
+ #search::placeholder, #contact::placeholder {
+      color: lightgray;
+    }
+    
+
+.search form button{
+    right:0;
+    bottom:0.5px;
+}
+.cards{
+    height: 50vh;
+}
+footer{
+        display: flow-root; 
+    background-color: #262936;
+}
+footer form button{
+     right:0;
+    bottom:0.5px;
+}
+
+.emoji{
+color:#009AD8 ;
+background-color: #1E202B;
+width:50px;
+height: 50px;
+border: 1px solid #1E202B;
+border-radius:50%;
+transition:all 0.5s ease-in-out;
+}
+
+.emoji:hover{
+    color:white;
+    background-color:#009AD8;
+
+}
+
+
+
+
