@@ -34,7 +34,7 @@ const months = [
 
 async function fetchData(location) {
   console.log(location);
-  let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a73a0450be0c445389d114131250707&q=${location}&days=3&aqi=no&alerts=no`, {
+  let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a73a0450be0c445389d114131250707&q=${location}&days=3&aqi=no&alerts=no`, {
     method: "get"
   });
 
