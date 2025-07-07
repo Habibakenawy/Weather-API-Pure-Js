@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -86,101 +89,115 @@
               class="btn btn-primary position-absolute top-0 end-0 m-1 rounded-5"
               type="button"
               id="button-addon2"
+              onclick="displayData()"
             >
               Find
             </button>
           </form>
-              <div class="row row-cols-1 row-cols-lg-3 mt-5 cards">
+          <div class="row row-cols-1 row-cols-lg-3 mt-5 cards">
             <div class="col card text-bg-secondary">
-              <div class="card-header"></div>
+              <div class="card-header d-flex justify-content-between align-content-center">
+                <div class="day">
+
+                </div>
+                <div class="date">
+
+                </div>
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                <h5 class="card-title city"></h5>
+                <p class="card-text degree h1 fs-1">
+              
                 </p>
+                <div class="img">
+                  <img src="" alt="" id="icon_1">
+                </div>
                 <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
+                  <small class="text-body-secondary condition"
+                    ></small
                   >
+                  <div class="d-flex justify-content-evenly align-items-center text-white-50">
+                    <div class="rain text-white-50">
+               
+                    </div>
+                    <div class="wind">
+                   
+                    </div>
+                    <div class="wind_dir">
+                      <img src="" alt="">
+                    </div>
+                  </div>
                 </p>
               </div>
             </div>
-            <div class="col card text-bg-dark">
-              <div class="card-header"></div>
+            <div class="col card text-bg-dark text-center ">
+              <div class="card-header day_2"></div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
+                <p class="card-text text-center">
+          <img src="" class="icon_2"></img>
+          <div class="upper_1 fs-4"></div>
+          <div class="lower_1 text-secondary "></div>
+          <div class="condition_1"></div>
                 </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
+
               </div>
             </div>
-            <div class="col card text-bg-secondary">
-              <div class="card-header"></div>
+            <div class="col card text-bg-dark text-center">
+              <div class="card-header  day_3"></div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
+                <p class="card-text text-center">
+          <img src="" class="icon_3"></img>
+          <div class="upper_2 fs-4 "></div>
+          <div class="lower_2 text-secondary"></div>
+          <div class="condition_2"></div>
                 </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-   <footer>
-  <div class="container">
-    <div class="content d-flex align-items-center">
-      <form action="" class="mt-5 position-relative me-auto w-75">
-        <input
-          type="email"
-          class="form-control p-2 rounded-5"
-          placeholder="Enter your email to subscribe..."
-          aria-label="Email"
-          id="contact"
-        />
-        <button
-          class="btn btn-primary position-absolute m-1 rounded-5"
-          type="button"
-          id="button-addon2"
-        >
-          Subscribe
-        </button>
-      </form>
+    <footer>
+      <div class="container">
+        <div class="content d-flex align-items-center">
+          <form action="" class="mt-5 position-relative me-auto w-75">
+            <input
+              type="email"
+              class="form-control p-2 rounded-5"
+              placeholder="Enter your email to subscribe..."
+              aria-label="Email"
+              id="contact"
+            />
+            <button
+              class="btn btn-primary position-absolute m-1 rounded-5"
+              type="button"
+              id="button-addon2"
+            >
+              Subscribe
+            </button>
+          </form>
 
-      <div class="emojis d-flex gap-3 mt-5">
-        <div class="emoji d-flex justify-content-center align-items-center">
-        <i class="fab fa-facebook-f"></i>
+          <div class="emojis d-flex gap-3 mt-5">
+            <div class="emoji d-flex justify-content-center align-items-center">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="emoji d-flex justify-content-center align-items-center">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="emoji d-flex justify-content-center align-items-center">
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="emoji d-flex justify-content-center align-items-center">
+              <i class="fab fa-pinterest-p"></i>
+            </div>
+          </div>
         </div>
-        <div class="emoji d-flex justify-content-center align-items-center">
-        <i class="fab fa-twitter"></i>
-        </div>
-        <div class="emoji d-flex justify-content-center align-items-center">
-        <i class="fab fa-google-plus-g"></i>
-        </div>
-         <div class="emoji d-flex justify-content-center align-items-center">
-        <i class="fab fa-pinterest-p"></i>
-        </div>
+        <p class="text-secondary mt-4 mb-5">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
       </div>
-    </div>
-    <p  class="text-secondary mt-4 mb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
-  </div>
-</footer>
-
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
